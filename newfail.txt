@@ -1,0 +1,45 @@
+npm install -g create-react-app
+create-react-app newapp
+cd newapp
+npm start
+index.js
+import React from 'react'
+import {render} from 'react-dom'
+render(<Article/>, document.getElementById('root'))
+function Article(props) {
+	const {mass1}=props
+	return(
+		<div className="">
+			<h2>{mass1.title}</h2>
+			<h3>daasd</h3>
+
+		</div>
+
+		)
+
+
+}
+export default Article
+import Article from './Article '
+import mass1 from '../json.js'
+<Article mass ={mass1[0]}/>
+import React, {Component} from 'react'
+class Article extends Component {
+		render(){
+const {mass1}=this.props
+	return(
+		<div className="">
+			<h2>{mass1.title}</h2>
+			<h3>daasd</h3>
+
+		</div>
+
+		)
+
+
+}
+}
+github
+cd-зайти в папку,
+dir-просмотреть содержимое,
+cd..-выйти в первоночальную папку
